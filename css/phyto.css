@@ -1,0 +1,229 @@
+/* body {
+  background-image: url(./images/anim.gif);
+} */
+
+/*barre de navigation*/
+#navcategory {
+  background-color: #046A1B;
+
+}
+
+/*reponsive nav*/
+
+@media screen and (max-width: 768px) {
+  #navu {
+    display: none;
+  }
+}
+/*======================================================================*/
+/*animation logo_PhytoBCD*/
+div.at-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  
+}
+
+.at-item {
+  width: 350px;
+  height: 100px;
+  background: url(../images/LOGO_phyto_bcd2.png) no-repeat;
+  animation-name: tilt-in-right-1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  /* shorthand 
+  animation: tilt-in-right-1 1s ease 0s 1 normal none;
+  */
+}
+
+@keyframes tilt-in-right-1 {
+  0% {
+    transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+/* animation nav*/
+div.at-container6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.at-item6 {
+  animation-name: tilt-in-right-1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  /* shorthand 
+    animation: tilt-in-right-1 1s ease 0s 1 normal forwards;
+    */
+}
+
+@keyframes tilt-in-right-1 {
+  0% {
+    transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+/*======================================================================*/
+/*footer*/
+#footer1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #046A1B;
+  width: 100%;
+  height: 200px;
+  left: auto;
+  right: auto;
+  top: 800px;
+  opacity: 80%;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+
+}
+
+#logos {
+  display: flex;
+  width: 100%;
+  height: 37px;
+  left: auto;
+  right: auto;
+  opacity: 80%;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+
+}
+
+#footer2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #046A1B;
+  width: 100%;
+  height: auto;
+  left: auto;
+  right: auto;
+  /* top: 800px; */
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/*responsive footer*/
+@media screen and (max-width: 768px) {
+  #footer1 {
+    display: none;
+  }
+
+  #logos {
+    display: blockquote;
+  }
+
+  #footer2 {
+    display: block;
+    text-align: center!important;
+    margin-top: 50px;
+  }
+}
+
+/*======================================================================*/
+/* animation formulaire*/
+div.at-container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1140px;
+  margin: auto;
+}
+
+.at-item3 {
+  animation-name: slide-top;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  /* shorthand 
+    animation: slide-top 1s ease 0s 1 normal both;
+    */
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+
+/*======================================================================*/
+
+/*carousels*/
+#carou {
+  margin-bottom: 70px;
+  box-shadow: grey 6px 6px 6px 0px;
+}
+
+#carou_foot {
+  box-shadow: grey 6px 6px 6px 0px;
+}
+
+
+/*=====================================================================*/
+
+/*page besoins*/
+div.at-container8 {
+}
+.at-item8 {
+  animation-name: shutter-in-top;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  /* shorthand 
+  animation: shutter-in-top 1s ease 0s 1 normal none;
+  */ 
+}
+@keyframes shutter-in-top {
+  0%{
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100%{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+/*image de card besoins*/
+#imgcard {
+  height: 172.8px;
+}
